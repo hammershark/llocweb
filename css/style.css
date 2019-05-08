@@ -51,7 +51,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 0.58));
   color: #fff;
   padding: 2px 20px 8px 20px;
   font-size: 16px;
@@ -62,13 +62,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 0.80));
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #1dc8cd;
+  background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 1));
   color: #fff;
 }
 
@@ -114,7 +114,7 @@ h6 {
 }
 
 #header.header-fixed {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, rgba(43, 134, 228, 1), rgba(29, 200, 205, 1));
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
@@ -127,7 +127,7 @@ h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url("../img/intro-bg.jpg") center top no-repeat;
+  background: linear-gradient(45deg, rgba(43, 134, 228, 0.8), rgba(29, 200, 205, 0.8)), url("../img/intro-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -315,6 +315,10 @@ h6 {
   outline: none;
 }
 
+.nav-menu a:hover {
+  color: black;
+}
+
 .nav-menu > li {
   margin-left: 10px;
 }
@@ -323,7 +327,8 @@ h6 {
   margin: 4px 0 0 0;
   padding: 10px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  background: #fff;
+  background: linear-gradient(45deg, rgba(43, 134, 228, 1), rgba(29, 200, 205, 1));
+  border-radius: 50px 20px;
 }
 
 .nav-menu ul li {
@@ -332,7 +337,7 @@ h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #fff;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -340,7 +345,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #1dc8cd;
+  color: black;
 }
 
 .nav-menu ul ul {
@@ -376,7 +381,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(11, 26, 49, 0.62);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -429,6 +434,9 @@ h6 {
 #mobile-nav ul .menu-item-active {
   color: #1dc8cd;
 }
+li .menu-has-children {
+  background: linear-gradient(45deg, rgba(43, 134, 228, 1), rgba(29, 200, 205, 1));
+}
 
 #mobile-body-overly {
   width: 100%;
@@ -437,7 +445,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(52, 59, 64, 0.9);
+  background: linear-gradient(45deg, rgba(35, 119, 89, 0.8), rgba(36, 102, 183, 0.58));
   display: none;
 }
 
@@ -481,7 +489,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 60px;
   height: 3px;
   background: #1dc8cd;
-  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  background: background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 1));
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -669,12 +677,258 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 30px 30px 0;
 }
 
+#advanced-features {
+  overflow: hidden;
+}
+
+#advanced-features .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#advanced-features h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+/*ACTIVITATS ECÒLOGIQUES*/
+#activitats-eco h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#activitats-eco p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#activitats-eco i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#activitats-eco i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#activitats-eco .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#activitats-eco .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+#activitats-eco {
+  overflow: hidden;
+}
+
+#activitats-eco .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#activitats-eco h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+/*ACTIVITATS LÙDIQUES*/
+#activitats-ludiques h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#activitats-ludiques p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#activitats-ludiques i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#activitats-ludiques i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#activitats-ludiques .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#activitats-ludiques .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+#activitats-ludiques {
+  overflow: hidden;
+}
+
+#activitats-ludiques .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#activitats-ludiques h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+/*ACTIVITATS D'ORIENTACIÓ*/
+#activitats-orientacio h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#activitats-orientacio p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#activitats-orientacio i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#activitats-orientacio i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#activitats-orientacio .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#activitats-orientacio .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+#activitats-orientacio {
+  overflow: hidden;
+}
+
+#activitats-orientacio .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#activitats-orientacio h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
+/*ACTIVITATS GASTRONÒMIQUES*/
+#activitats-gastro h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  color: #999;
+}
+
+#activitats-gastro p {
+  line-height: 24px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+#activitats-gastro i {
+  color: #666666;
+  font-size: 64px;
+  transition: 0.5s;
+  float: left;
+  padding: 0 15px 0px 0;
+  line-height: 1;
+}
+
+#activitats-gastro i:before {
+  background: #1dc8cd;
+  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#activitats-gastro .advanced-feature-img-right {
+  max-width: 100%;
+  float: right;
+  padding: 0 0 30px 30px;
+}
+
+#activitats-gastro .advanced-feature-img-left {
+  max-width: 100%;
+  float: left;
+  padding: 0 30px 30px 0;
+}
+
+#activitats-gastro {
+  overflow: hidden;
+}
+
+#activitats-gastro .features-row {
+  padding: 60px 0 30px 0;
+}
+
+#activitats-gastro h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+
 /* Call To Action Section
 --------------------------------*/
 
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(35, 119, 89, 0.8), rgba(36, 102, 183, 0.58)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -1027,7 +1281,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #1dc8cd;
+  color: #007bff;
 }
 
 #contact .contact-about p {
@@ -1121,7 +1375,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 0.58));
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -1129,6 +1383,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
+  background: linear-gradient(45deg, #eff5f5, rgba(36, 102, 183, 1));
   cursor: pointer;
 }
 
